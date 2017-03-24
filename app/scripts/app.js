@@ -1,4 +1,5 @@
 (function() {
+    
      function config($stateProvider, $locationProvider) {
          $locationProvider
              .html5Mode({
@@ -12,7 +13,7 @@
                  templateUrl: '/templates/main.html'
              })
      }
- 
+        
      angular
          .module('blocChat', ['ui.router', 'firebase'])
          .config(config);

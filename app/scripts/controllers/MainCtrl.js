@@ -1,6 +1,6 @@
  (function() {
      function MainCtrl(Room) {
-        
+         var $scope = Room.rooms;
      }
  
      angular
