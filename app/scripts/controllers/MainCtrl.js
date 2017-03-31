@@ -1,6 +1,8 @@
  (function() {
      function MainCtrl(Room) {
-         var $scope = Room.rooms;
+         this.rooms = Room.all;
+         console.log(this.rooms);
+         console.log("inside controller");
      }
  
      angular

@@ -1,2 +1,6 @@
-<section ng-repeat="room in main.rooms">
+<section class="sidebar">
+    <h1 class="head">Bloc Chat</h1>
+    <div ng-repeat="room in main.rooms" class="rooms">
+        <div>{{ room.$id }}</div>
+    </div>
 </section>
