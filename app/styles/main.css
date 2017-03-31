@@ -16,16 +16,18 @@
     padding-left: 1.5rem;
     position: relative;
     font-weight: normal;
+    font-size: 2vw;
     
 }
 
 .rooms {
     width: 100%;
     text-align: left;
-    line-height: 2;
+    line-height: 2.2;
     padding-left: 1.5rem;
     position: relative;
     color: gray;
+    font-size: 1.1vw;
     
 }
 
