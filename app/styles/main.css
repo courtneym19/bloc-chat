@@ -9,7 +9,7 @@
     
 }
 
-.head {
+.sidebar-head {
     width: 100%;
     text-align: left;
     padding-top: 1rem;
@@ -20,7 +20,7 @@
     
 }
 
-.rooms {
+.sidebar-rooms {
     width: 100%;
     text-align: left;
     line-height: 2.2;
@@ -29,6 +29,25 @@
     color: gray;
     font-size: 1.1vw;
     
+}
+
+
+
+.new-room {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: .5rem;
+    font-size: .75vw;
+    border-style: none;
+    border-radius: 2px;
+    color: gray;
+    background-color: white;
+    
+    
+}
+
+.sidebar .new-room-button {
+    display: inline-block;
 }
 
  @media (min-width: 640px) {
