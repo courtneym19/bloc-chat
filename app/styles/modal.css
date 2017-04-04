@@ -1,0 +1,23 @@
+.modal-template {
+    background-color: lightgray;
+    width: 40%;
+    height: 30%;
+    position: fixed;
+    top: 30%;
+    left: 40%
+
+}
+
+.modal-header {
+    color: black;
+    padding-top: 5%;
+}
+
+.modal-subtext {
+    color: gray;
+    line-height: .2;
+}
+
+.modal-header, .modal-subtext, .modal-footer, form {
+    padding-left: 10%;
+}
