@@ -1,5 +1,4 @@
 (function() {
-    
      function config($stateProvider, $locationProvider) {
          $locationProvider
              .html5Mode({
@@ -12,6 +11,7 @@
                  controller: 'MainCtrl as main',
                  templateUrl: '/templates/main.html'
              })
+         
      }
         
      angular
