@@ -1,11 +1,12 @@
 (function(){
     function ModalCtrl(Room, $uibModalInstance){
 
-
         this.name = '';
         
         this.submit = function(){
             $uibModalInstance.close(this.name);
+            console.log($uibModalInstance);
+            
         }
         
         this.cancel = function(){
