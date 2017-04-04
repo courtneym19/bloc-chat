@@ -1,11 +1,25 @@
  (function() {
-     function MainCtrl(Room) {
+     function MainCtrl(Room, $uibModal) {
          this.rooms = Room.all;
-         console.log(this.rooms);
-         console.log("inside controller");
+         
+         this.open = function(){
+            var newModal = $uibModal.open({
+                templateUrl: '/templates/modal.html',
+                controller: 'ModalCtrl',
+                controllerAs: 'modal',
+                size: "small",
+            });
+             
+             newModal.result.then(function(newRoomName){
+                 Room.addNewRoom(newRoomName);
+             })
+
+         }
+         
+
      }
  
      angular
          .module('blocChat')
-         .controller('MainCtrl', ['Room', MainCtrl]);
+         .controller('MainCtrl', ['Room', '$uibModal', MainCtrl]);
  })();

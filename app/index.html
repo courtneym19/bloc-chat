@@ -6,6 +6,7 @@
     <title>Bloc Base Project</title>
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" href="/styles/modal.css">
 </head>
 <body>
     <ui-view></ui-view>
@@ -24,8 +25,10 @@
     };
     firebase.initializeApp(config);
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
     <script src="/scripts/app.js"></script>
     <script src="/scripts/controllers/MainCtrl.js"></script>
+    <script src="/scripts/controllers/ModalCtrl.js"></script>
     <script src="/scripts/factories/Room.js"></script>
 </body>
 </html>
