@@ -21,8 +21,8 @@
          
          this.setActiveRoom = function(room){
              this.activeRoom = room;
-             this.activeRoomName = room.$value;
-             //this.messages = Message.getMessagesById(room.$id);
+             this.activeRoomName = room.name;
+             this.messages = Message.getByRoomId(room.$id);
          }
          
      }

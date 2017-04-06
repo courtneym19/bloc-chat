@@ -60,6 +60,30 @@
     font-size: 1.6vw;
 }
 
+.messages {
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    padding-left: .5rem;
+    background-color: aliceblue;
+}
+
+.messages:nth-child(even) {
+    
+}
+
+.username, .content {
+    line-height: 1.5;
+    font-size: .9vw
+}
+
+.username {
+    font-weight: bold;
+}
+
+.content {
+    font-weight: normal;
+}
+
 
  @media (min-width: 640px) {
     html { font-size: 93%; }

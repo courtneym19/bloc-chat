@@ -4,7 +4,7 @@
         this.name = '';
         
         this.submit = function(){
-            $uibModalInstance.close(this.name);            
+            $uibModalInstance.close(this.name);
         }
         
         this.cancel = function(){
