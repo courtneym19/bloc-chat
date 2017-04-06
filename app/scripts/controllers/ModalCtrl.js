@@ -5,7 +5,6 @@
         
         this.submit = function(){
             $uibModalInstance.close(this.name);
-            console.log($uibModalInstance);
             
         }
         
