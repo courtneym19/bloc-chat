@@ -9,11 +9,11 @@
     </section>
     <section class="chatroom" ng-show="activeRoomName !== null">
         <h2 class="active-room-name">{{ main.activeRoomName }}</h2>
-        <ul ng-repeat="message in main.messages">
-            <section class="messages">
-                <div class="username">{{ message.username }}</div>
-                <div class="content">{{ message.content }}</div>
-            </section>    
-        </ul>
+        <table class="message-container">
+            <tr class="messages" ng-repeat="message in main.messages">
+                <td class="message-content"> <span style="font-weight:bold">{{ message.username }}</span><br>{{ message.content }}</td>
+                <td class="message-timestamp">{{ message.timestamp }}</td> 
+            </tr>
+        </table>
     </section>
 </main>

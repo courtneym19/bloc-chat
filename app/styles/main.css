@@ -56,33 +56,46 @@
 .active-room-name {
     padding-top: .7rem;
     padding-left: 1.5rem;
+    padding-bottom:1.5rem;
     font-weight: normal;
     font-size: 1.6vw;
 }
 
+.message-container {
+    width: 100%;
+    border-collapse: collapse;
+}
+
 .messages {
-    padding-top: .7rem;
-    padding-bottom: .7rem;
-    padding-left: .5rem;
     background-color: aliceblue;
 }
 
 .messages:nth-child(even) {
-    
+    background-color: white;
 }
 
-.username, .content {
+.message-content {
     line-height: 1.5;
-    font-size: .9vw
+    font-size: 1.2vw; 
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
-.username {
-    font-weight: bold;
+.message-timestamp {
+    float: right;
+    position: relative;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+    color: gray;
+    font-size: .8vw;
+    font-style: italic;
 }
 
-.content {
-    font-weight: normal;
+.message-content, .message-timestamp {
+
 }
+
 
 
  @media (min-width: 640px) {
