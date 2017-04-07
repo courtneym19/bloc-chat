@@ -3,10 +3,12 @@
 
         this.name = '';
         
-        this.submit = function(){
+        this.submit = function(newRoomName){
             $uibModalInstance.close(this.name);
-            
+            Room.addNewRoom(newRoomName);
         }
+
+        
         
         this.cancel = function(){
             $uibModalInstance.dismiss('cancel');
