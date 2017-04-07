@@ -9,7 +9,11 @@
     return {
         all: rooms,
         addNewRoom: function(newRoomName){
-            rooms.$add({name: newRoomName});
+            rooms.$add({name: newRoomName}).then(function(){
+                var id = ref.key;
+                console.log("added record with id " + id);
+                rooms.$indexFor(id);
+            });
         }
     }
 

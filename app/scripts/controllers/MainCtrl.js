@@ -10,9 +10,6 @@
                 size: "small",
             });
             
-             newModal.result.then(function(newRoomName){
-                 Room.addNewRoom(newRoomName);
-             })
 
          }
          
