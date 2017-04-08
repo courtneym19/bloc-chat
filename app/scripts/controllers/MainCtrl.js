@@ -11,10 +11,10 @@
                 controller: 'ModalCtrl',
                 controllerAs: 'modal',
                 size: "small",
+                 
             });
-        }
+         }
 
-         
          
          this.setActiveRoom = function(room){
              this.activeRoom = room;
