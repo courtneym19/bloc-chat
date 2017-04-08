@@ -92,11 +92,6 @@
     font-style: italic;
 }
 
-.message-content, .message-timestamp {
-
-}
-
-
 
  @media (min-width: 640px) {
     html { font-size: 93%; }
