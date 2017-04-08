@@ -8,12 +8,7 @@
                 controller: 'ModalCtrl',
                 controllerAs: 'modal',
                 size: "small",
-                resolve:{
-                    $uibModalInstance: function(){
-                        return this.$uibModalInstance;
-                    },
                  
-                }
             });
          }
          
