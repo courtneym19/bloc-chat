@@ -12,19 +12,15 @@
                 controllerAs: 'modal',
                 size: "small",
             });
-            
-             newModal.result.then(function(newRoomName){
-                 Room.addNewRoom(newRoomName);
-             })
+        }
 
-         }
+         
          
          this.setActiveRoom = function(room){
              this.activeRoom = room;
              this.activeRoomName = room.name;
              this.messages = Message.getByRoomId(room.$id);
-         }
-         
+         } 
      }
  
      angular

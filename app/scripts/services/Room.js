@@ -12,11 +12,13 @@
     return {
         all: rooms,
         addNewRoom: function(newRoomName){
-            rooms.$add({name: newRoomName});
-            console.log(rooms);
+            rooms.$add({name: newRoomName}).then(function(){
+                var id = ref.key;
+                rooms.$indexFor(id);
+            });
         }
-    }
 
+    }
   }
 
   angular
