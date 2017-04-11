@@ -1,12 +1,12 @@
 
-<div class="modal-template">
+<div class="modal-template" id="modal-template-id">
     <h3 class="modal-header">Create new room</h3>
     <h5 class="modal-subtext">Enter a room name</h5>
     <form>
-        <input type="text" class="text-area" ng-model="modal.name" required="string">
+        <input type="text" class="text-area" ng-model="newRoomName">
     </form>
     <div class="modal-footer">
         <button class="btn-cancel" type="button" ng-click="modal.cancel()">Cancel</button>
-        <button class="btn-submit" type="button" ng-click="modal.submit(modal.name)">Create room</button>
+        <button class="btn-submit" type="button" ng-click="modal.submit(newRoomName)">Create room</button>
     </div>
 </div>

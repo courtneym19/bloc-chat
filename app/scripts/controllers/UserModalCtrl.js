@@ -2,8 +2,13 @@
     function UserModalCtrl($cookies, $uibModalInstance){
         
         this.submit = function(username){
-            $cookies.put('blocChatCurrentUser', username);
-            $uibModalInstance.close();
+            if (username.length >= 1) {
+                $cookies.put('blocChatCurrentUser', username);
+                $uibModalInstance.close();
+            }
+            else {
+               alert("Please enter a username"); 
+            }
         }
 
 
