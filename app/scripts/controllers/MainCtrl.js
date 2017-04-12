@@ -11,6 +11,9 @@
                 controller: 'ModalCtrl',
                 controllerAs: 'modal',
                 size: "small",
+                resolve: {
+                    
+                }
             });
          }
          
