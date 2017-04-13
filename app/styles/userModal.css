@@ -1,11 +1,17 @@
 .user-modal-template {
+    position: absolute;
     background-color: lightgray;
     width: 35%;
     height: 30%;
     position: fixed;
-    top: 30%;
+    top: 25%;
     left: 40%
 
+}
+
+.user-modal-text, .user-modal-footer {
+    position: relative;
+    
 }
 
 .user-modal-header {
@@ -41,3 +47,12 @@
 .user-modal-header, .user-modal-subtext, .user-modal-footer {
     padding-left: 10%;
 }
+
+ @media (min-width: 640px) {
+    html { font-size: 93%; }
+ }
+ 
+
+ @media (min-width: 1024px) {
+   html { font-size: 100%; }
+ }

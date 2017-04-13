@@ -10,10 +10,7 @@
                 templateUrl: '/templates/modal.html',
                 controller: 'ModalCtrl',
                 controllerAs: 'modal',
-                size: "small",
-                resolve: {
-                    
-                }
+                size: "small"
             });
          }
          

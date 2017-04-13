@@ -1,9 +1,11 @@
 <div class="user-modal-template">
-    <h3 class="user-modal-header">Set a username</h3>
-    <h5 class="user-modal-subtext">This name will appear when you send messages</h5>
-    <form>
-        <input type="text" class="user-text-area" name="input" ng-model="username" required>
-    </form>
+    <section class="user-modal-text">
+        <h3 class="user-modal-header">Set a username</h3>
+        <h5 class="user-modal-subtext">This name will appear when you send messages</h5>
+        <form>
+            <input type="text" class="user-text-area" name="input" ng-model="username" required>
+        </form>
+    </section>
     <div class="user-modal-footer">
         <button class="user-btn-submit" type="button" ng-click="userModal.submit(username)"
  >Set username</button>
