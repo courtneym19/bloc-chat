@@ -4,8 +4,9 @@
         this.submit = function(username){
             if (username.length >= 1) {
                 $cookies.put('blocChatCurrentUser', username);
-                $uibModalInstance.close();
+                $uibModalInstance.close(); 
             }
+            
             else {
                alert("Please enter a username"); 
             }

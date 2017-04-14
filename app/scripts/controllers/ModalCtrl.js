@@ -4,6 +4,7 @@
         this.submit = function(newRoomName){
             Room.addNewRoom(newRoomName);
             $uibModalInstance.close();
+            throw Error('error!');
   
         }
 
