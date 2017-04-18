@@ -14,7 +14,6 @@
             messages.$add(newMessage).then(function(ref){
                 var id = ref.key;
                 messages.$indexFor(id);
-                console.log(newMessage.timestamp);
               });
         }
     };
