@@ -13,12 +13,12 @@
         <table class="message-container">
             <tr class="messages" ng-repeat="message in main.messages">
                 <td class="message-content"> <span style="font-weight:bold">{{ message.username }}</span><br>{{ message.content }}</td>
-                <td class="message-timestamp">{{ message.timestamp }}</td> 
+                <td class="message-timestamp">{{ message.timestamp | date:'h:mm a'}}</td> 
             </tr>
         </table>
         <footer>
-            <input type="text" class="type-message" placeholder="Write your message here...">
-            <button type="button" class="submit-message">Send</button>
+            <input type="text" class="type-message" ng-model="newMessage" placeholder="Write your message here...">
+            <button type="button" class="submit-message" ng-click="main.sendMessage(newMessage)">Send</button>
         </footer>
     </section>
 </main>
