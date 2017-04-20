@@ -92,7 +92,7 @@
     font-style: italic;
 }
 
-.type-message {
+#type-message {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -107,7 +107,7 @@
     font-size: 1.2vw;
 }
 
-.submit-message {
+#submit-message {
     position: absolute;
     bottom: 0;
     right: 0;

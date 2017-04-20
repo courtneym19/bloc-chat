@@ -17,8 +17,8 @@
             </tr>
         </table>
         <footer>
-            <input type="text" class="type-message" ng-model="newMessage" placeholder="Write your message here...">
-            <button type="button" class="submit-message" ng-click="main.sendMessage(newMessage)">Send</button>
+            <input type="text" id="type-message" ng-model="newMessage" onKeyPress="main.enterSend(event)" placeholder="Write your message here...">
+            <button type="button" id="submit-message" ng-click="main.sendMessage(newMessage)">Send</button>
         </footer>
     </section>
 </main>
